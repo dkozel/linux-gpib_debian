@@ -1,0 +1,8 @@
+/etc/gpib.conf
+/etc/hotplug/usb/agilent_82357a
+/etc/hotplug/usb/agilent_82357a.usermap
+/etc/hotplug/usb/ni_usb_gpib
+/etc/hotplug/usb/ni_usb_gpib.usermap
+/etc/udev/rules.d/99-agilent_82357a.rules
+/etc/udev/rules.d/99-gpib-generic.rules
+/etc/udev/rules.d/99-ni_usb_gpib.rules
