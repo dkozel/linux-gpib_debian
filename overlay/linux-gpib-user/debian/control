@@ -2,7 +2,7 @@ Source: linux-gpib-user
 Section: unknown
 Priority: optional
 Maintainer: Derek Kozel <derek@bitstovolts.com>
-Build-Depends: debhelper (>= 11), autotools-dev
+Build-Depends: debhelper (>= 11), autotools-dev, flex, bison, python-dev
 Standards-Version: 4.1.3
 Homepage: <insert the upstream URL, if relevant>
 #Vcs-Browser: https://salsa.debian.org/debian/linux-gpib-user

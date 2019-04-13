@@ -1,10 +1,8 @@
 Source: linux-gpib-kernel
-Section: unknown
+Section: misc
 Priority: optional
 Maintainer: Derek Kozel <derek@bitstovolts.com>
-Build-Depends: debhelper (>= 11), mime-support, gawk,
-  libmagic1:amd64, ccache, tzdata, perl-modules-5.26, libreadline7:amd64,
-  file, libperl5.26:amd64, libelf1:amd64, libsigsegv2:amd64, libmagic-mgc
+Build-Depends: debhelper (>= 11), dkms
 Standards-Version: 4.1.3
 Homepage: https://linux-gpib.sourceforge.io/
 #Vcs-Browser: https://salsa.debian.org/debian/linux-gpib-kernel
@@ -12,6 +10,7 @@ Homepage: https://linux-gpib.sourceforge.io/
 
 Package: linux-gpib-kernel
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}
+Recommends: gpib-firmware
 Description: A support package for GPIB (IEEE 488) hardware
   The Linux GPIB Package is a support package for GPIB (IEEE 488) hardware. The package contains kernel driver modules, and a C user-space library with Guile, Perl, PHP, Python and TCL bindings. The API of the C library is intended to be compatible with National Instrument's GPIB library.
